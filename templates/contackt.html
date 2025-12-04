@@ -1,0 +1,973 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Контакты - K-Land Education Center
+{% endblock %}
+
+{% block body %}
+
+<!-- Hero секция -->
+<section class="contacts-hero">
+    <div class="hero-background">
+        <div class="floating-contacts">
+            <div class="contact-element ce-1">📞</div>
+            <div class="contact-element ce-2">💬</div>
+            <div class="contact-element ce-3">📍</div>
+            <div class="contact-element ce-4">✉️</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span>📞 Свяжитесь с нами</span>
+            </div>
+            <h1 class="hero-title">
+                Всегда на связи
+            </h1>
+            <p class="hero-subtitle">
+                Готовы ответить на ваши вопросы и помочь с выбором образовательной программы. 
+                Выбирайте удобный способ связи!
+            </p>
+        </div>
+    </div>
+    <div class="hero-wave">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+        </svg>
+    </div>
+</section>
+
+<!-- Контактные карточки -->
+<section class="contacts-cards-section">
+    <div class="container">
+        <div class="contacts-grid">
+            <!-- Адрес -->
+            <div class="contact-card">
+                <div class="card-icon location">
+                    <i class="bi bi-geo-alt-fill"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Наш офис</h3>
+                    <p>г. Ош, Алишера Навои 68/2</p>
+                    <a href="https://maps.google.com/?q=Ош,Алишера+Навои+68/2" 
+                       target="_blank" 
+                       class="card-action">
+                        <i class="bi bi-arrow-up-right"></i>
+                        Открыть карту
+                    </a>
+                </div>
+            </div>
+
+            <!-- Телефоны -->
+            <div class="contact-card">
+                <div class="card-icon phone">
+                    <i class="bi bi-telephone-fill"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Телефоны</h3>
+                    <div class="phone-numbers">
+                        <a href="tel:+996775469111">+996 775 469 111</a>
+                        <a href="tel:+996553469111">+996 553 469 111</a>
+                    </div>
+                    <a href="tel:+996775469111" class="card-action">
+                        <i class="bi bi-telephone-outbound"></i>
+                        Позвонить сейчас
+                    </a>
+                </div>
+            </div>
+
+            <!-- Часы работы -->
+            <div class="contact-card">
+                <div class="card-icon clock">
+                    <i class="bi bi-clock-fill"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Часы работы</h3>
+                    <div class="working-hours">
+                        <div class="time-slot">
+                            <span>Понедельник - Пятница</span>
+                            <span>9:00 - 18:00</span>
+                        </div>
+                        <div class="time-slot">
+                            <span>Суббота</span>
+                            <span>10:00 - 16:00</span>
+                        </div>
+                        <div class="time-slot">
+                            <span>Воскресенье</span>
+                            <span>Выходной</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Email -->
+            <div class="contact-card">
+                <div class="card-icon email">
+                    <i class="bi bi-envelope-fill"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Email</h3>
+                    <p>info@klandcenter.com</p>
+                    <a href="mailto:info@klandcenter.com" class="card-action">
+                        <i class="bi bi-send"></i>
+                        Написать письмо
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Быстрые действия -->
+<section class="quick-actions-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Быстрая связь</h2>
+            <p>Выберите удобный способ общения</p>
+        </div>
+        
+        <div class="actions-grid">
+            <a href="tel:+996775469111" class="action-card call">
+                <div class="action-icon">
+                    <i class="bi bi-telephone-fill"></i>
+                </div>
+                <div class="action-content">
+                    <h3>Позвонить</h3>
+                    <p>Немедленная консультация по телефону</p>
+                    <div class="action-badge">Рекомендуем</div>
+                </div>
+            </a>
+
+            <a href="https://wa.me/996775469111" target="_blank" class="action-card whatsapp">
+                <div class="action-icon">
+                    <i class="bi bi-whatsapp"></i>
+                </div>
+                <div class="action-content">
+                    <h3>WhatsApp</h3>
+                    <p>Быстрый ответ в мессенджере</p>
+                    <div class="action-badge">Популярно</div>
+                </div>
+            </a>
+
+            <a href="#" class="action-card telegram">
+                <div class="action-icon">
+                    <i class="bi bi-telegram"></i>
+                </div>
+                <div class="action-content">
+                    <h3>Telegram</h3>
+                    <p>Напишите нам в Telegram</p>
+                </div>
+            </a>
+
+            <a href="#" class="action-card instagram">
+                <div class="action-icon">
+                    <i class="bi bi-instagram"></i>
+                </div>
+                <div class="action-content">
+                    <h3>Instagram</h3>
+                    <p>Следите за нами в соцсетях</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Карта и форма -->
+<section class="map-form-section">
+    <div class="container">
+        <div class="map-form-grid">
+            <!-- Карта -->
+            <div class="map-container">
+                <div class="map-header">
+                    <h3>Мы находимся здесь</h3>
+                    <p>Приходите на личную консультацию</p>
+                </div>
+                <div class="map-placeholder">
+                    <div class="map-content">
+                        <div class="map-icon">
+                            <i class="bi bi-geo-alt-fill"></i>
+                        </div>
+                        <h4>K-Land Education Center</h4>
+                        <p>г. Ош, Алишера Навои 68/2</p>
+                        <div class="map-actions">
+                            <a href="https://maps.google.com/?q=Ош,Алишера+Навои+68/2" 
+                               target="_blank" 
+                               class="map-btn primary">
+                                <i class="bi bi-map"></i>
+                                Google Maps
+                            </a>
+                            <a href="https://2gis.kg/osh/search/Ош%20Алишера%20Навои%2068/2" 
+                               target="_blank" 
+                               class="map-btn secondary">
+                                <i class="bi bi-geo"></i>
+                                2GIS
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Форма обратной связи -->
+            <div class="contact-form-container">
+                <div class="form-header">
+                    <h3>Остались вопросы?</h3>
+                    <p>Заполните форму и мы свяжемся с вами в течение 15 минут</p>
+                </div>
+                <form method="post" action="{{ url_for('contackt') }}" class="contact-form">
+                    {{ form.csrf_token }}
+                    <div class="form-group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+996 ___ ___ ___" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Сообщение</label>
+                        <textarea id="message" name="message" placeholder="Опишите ваш вопрос или выбранный курс..." rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <i class="bi bi-send"></i>
+                        Отправить заявку
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ секция -->
+<section class="faq-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Частые вопросы</h2>
+            <p>Ответы на популярные вопросы о поступлении</p>
+        </div>
+        
+        <div class="faq-grid">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h4>Как записаться на консультацию?</h4>
+                    <i class="bi bi-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Вы можете позвонить по номеру +996 775 469 111, написать в WhatsApp или заполнить форму на сайте. Мы свяжемся с вами в течение 15 минут.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h4>Нужно ли знать корейский для поступления?</h4>
+                    <i class="bi bi-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Нет, мы предлагаем подготовительные курсы корейского языка с нуля. Также есть программы на английском языке.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h4>Какие документы нужны для поступления?</h4>
+                    <i class="bi bi-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Для начала обучения нужен паспорт и документ об образовании. Мы поможем с оформлением всех необходимых документов для поступления в Корею.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+/* Hero Section */
+.contacts-hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.floating-contacts {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.contact-element {
+    position: absolute;
+    font-size: 2rem;
+    opacity: 0.3;
+    animation: floatContact 8s ease-in-out infinite;
+}
+
+.ce-1 { top: 20%; left: 10%; animation-delay: 0s; }
+.ce-2 { top: 60%; left: 80%; animation-delay: 2s; }
+.ce-3 { top: 80%; left: 20%; animation-delay: 4s; }
+.ce-4 { top: 30%; left: 70%; animation-delay: 6s; }
+
+@keyframes floatContact {
+    0%, 100% { transform: translateY(0px) rotate(0deg) scale(1); }
+    50% { transform: translateY(-20px) rotate(10deg) scale(1.1); }
+}
+
+.hero-content {
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.hero-badge {
+    margin-bottom: 1.5rem;
+}
+
+.hero-badge span {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    font-weight: 600;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+.hero-wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.hero-wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 80px;
+}
+
+.hero-wave .shape-fill {
+    fill: #FFFFFF;
+}
+
+/* Contacts Cards */
+.contacts-cards-section {
+    padding: 6rem 0;
+    background: #f8fafc;
+}
+
+.contacts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+}
+
+.contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.card-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    color: white;
+    font-size: 2rem;
+}
+
+.location { background: linear-gradient(45deg, #667eea, #764ba2); }
+.phone { background: linear-gradient(45deg, #10b981, #059669); }
+.clock { background: linear-gradient(45deg, #f59e0b, #d97706); }
+.email { background: linear-gradient(45deg, #8b5cf6, #7c3aed); }
+
+.card-content h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 1rem;
+}
+
+.card-content p {
+    color: #6b7280;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.phone-numbers {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.phone-numbers a {
+    color: #1f2937;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.phone-numbers a:hover {
+    color: #667eea;
+}
+
+.working-hours {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.time-slot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.time-slot:last-child {
+    border-bottom: none;
+}
+
+.time-slot span:first-child {
+    color: #6b7280;
+}
+
+.time-slot span:last-child {
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.card-action {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.card-action:hover {
+    color: #764ba2;
+    transform: translateX(5px);
+}
+
+/* Quick Actions */
+.quick-actions-section {
+    padding: 6rem 0;
+    background: white;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 1rem;
+}
+
+.section-header p {
+    font-size: 1.2rem;
+    color: #6b7280;
+}
+
+.actions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.action-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.action-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.call { border-color: #10b981; }
+.whatsapp { border-color: #25d366; }
+.telegram { border-color: #0088cc; }
+.instagram { border-color: #e4405f; }
+
+.action-card:hover.call { border-color: #059669; }
+.action-card:hover.whatsapp { border-color: #128c7e; }
+.action-card:hover.telegram { border-color: #0077b5; }
+.action-card:hover.instagram { border-color: #c13584; }
+
+.action-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.call .action-icon { background: #10b981; }
+.whatsapp .action-icon { background: #25d366; }
+.telegram .action-icon { background: #0088cc; }
+.instagram .action-icon { background: #e4405f; }
+
+.action-content h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.action-content p {
+    color: #6b7280;
+    margin-bottom: 1rem;
+}
+
+.action-badge {
+    display: inline-block;
+    background: #fbbf24;
+    color: #1f2937;
+    padding: 0.25rem 0.75rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* Map & Form Section */
+.map-form-section {
+    padding: 6rem 0;
+    background: #f8fafc;
+}
+
+.map-form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.map-container {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.map-header {
+    padding: 2rem;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+}
+
+.map-header h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.map-header p {
+    opacity: 0.9;
+}
+
+.map-placeholder {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.map-content {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.map-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    color: white;
+    font-size: 2rem;
+}
+
+.map-content h4 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.map-content p {
+    color: #6b7280;
+    margin-bottom: 2rem;
+}
+
+.map-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.map-btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.map-btn.primary {
+    background: #667eea;
+    color: white;
+}
+
+.map-btn.secondary {
+    background: transparent;
+    color: #667eea;
+    border: 2px solid #667eea;
+}
+
+.map-btn:hover {
+    transform: translateY(-2px);
+}
+
+.map-btn.primary:hover {
+    background: #5a67d8;
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+}
+
+.map-btn.secondary:hover {
+    background: #667eea;
+    color: white;
+}
+
+.contact-form-container {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form-header h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.form-header p {
+    color: #6b7280;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 1rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.submit-btn {
+    padding: 1rem 2rem;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 6rem 0;
+    background: white;
+}
+
+.faq-grid {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.faq-item {
+    background: #f8fafc;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq-item.active {
+    background: white;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.faq-question {
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq-question h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 0;
+}
+
+.faq-question i {
+    color: #667eea;
+    transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-question i {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    padding: 0 2rem 1.5rem;
+    color: #6b7280;
+    line-height: 1.6;
+    display: none;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .contacts-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .map-form-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .actions-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .map-actions {
+        flex-direction: column;
+    }
+    
+    .map-btn {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .contact-card,
+    .contact-form-container {
+        padding: 2rem;
+    }
+    
+    .action-card {
+        padding: 1.5rem;
+    }
+}
+</style>
+
+<script>
+// FAQ функциональность
+document.addEventListener('DOMContentLoaded', function() {
+    const faqItems = document.querySelectorAll('.faq-item');
+    
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        
+        question.addEventListener('click', () => {
+            // Закрываем все остальные элементы
+            faqItems.forEach(otherItem => {
+                if (otherItem !== item) {
+                    otherItem.classList.remove('active');
+                }
+            });
+            
+            // Переключаем текущий элемент
+            item.classList.toggle('active');
+        });
+    });
+
+    // Анимация появления элементов
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = "1";
+                entry.target.style.transform = "translateY(0)";
+            }
+        });
+    }, { threshold: 0.1 });
+
+    // Анимируем контактные карточки
+    const contactCards = document.querySelectorAll('.contact-card, .action-card');
+    contactCards.forEach((card, index) => {
+        card.style.opacity = "0";
+        card.style.transform = "translateY(30px)";
+        card.style.transition = `all 0.6s ease ${index * 0.1}s`;
+        observer.observe(card);
+    });
+
+    // Анимируем форму и карту
+    const mapFormElements = document.querySelectorAll('.map-container, .contact-form-container');
+    mapFormElements.forEach((el, index) => {
+        el.style.opacity = "0";
+        el.style.transform = "translateX(" + (index % 2 === 0 ? -30 : 30) + "px)";
+        el.style.transition = `all 0.6s ease ${index * 0.2}s`;
+        observer.observe(el);
+    });
+});
+
+// Обработка формы
+document.querySelector('.contact-form')?.addEventListener('submit', function(e) {
+    // e.preventDefault();  <-- убрали
+    const submitBtn = this.querySelector('.submit-btn');
+    const originalText = submitBtn.innerHTML;
+
+    submitBtn.innerHTML = '<i class="bi bi-check"></i> Отправлено!';
+    submitBtn.style.background = '#10b981';
+
+    // Через 3 секунды вернем кнопку в исходное состояние (форма уже отправлена)
+    setTimeout(() => {
+        submitBtn.innerHTML = originalText;
+        submitBtn.style.background = '';
+    }, 3000);
+});
+
+</script>
+{% endblock %}
