@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Вход
+{% endblock %}
+
+{% block body %}
+<div class="auth-container">
+    <div class="auth-header">
+        <div class="d-flex align-items-center justify-content-center mb-3">
+            <img style="width: 100px;" src="{{ url_for('static', filename='images/Remove-bg.ai_1764294687291.png') }}" alt="">
+        </div>
+        <h6 class="mb-0 text-muted">Вход в аккаунт</h6>
+    </div>
+    
+    <div class="auth-body">
+        <!-- Flash сообщения -->
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ 'danger' if category == 'error' else 'success' }} alert-dismissible fade show" role="alert">
+                        {{ message }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        <form method="post">
+            {{ form.csrf_token }}
+            
+            <div class="mb-3">
+                {{ form.email.label(class="form-label small fw-medium") }}
+                {{ form.email(class="form-control", placeholder="Введите ваш email") }}
+                {% if form.email.errors %}
+                    <div class="text-danger small mt-1">
+                        {% for error in form.email.errors %}
+                            {{ error }}
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+            
+            <div class="mb-3">
+                {{ form.password.label(class="form-label small fw-medium") }}
+                {{ form.password(class="form-control", placeholder="Введите пароль") }}
+                {% if form.password.errors %}
+                    <div class="text-danger small mt-1">
+                        {% for error in form.password.errors %}
+                            {{ error }}
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+
+            {% if form.remember %}
+            <div class="mb-3">
+                <div class="form-check">
+                    {{ form.remember(class="form-check-input") }}
+                    {{ form.remember.label(class="form-check-label small") }}
+                </div>
+            </div>
+            {% endif %}
+            
+            {{ form.submit(class="btn-auth") }}
+            
+            <div class="divider">
+                ИЛИ
+            </div>
+            
+            <div class="text-center">
+                <span class="small text-muted">Нет аккаунта? </span>
+                <a href="{{ url_for('sign_up') }}" class="auth-link small fw-medium">Зарегистрируйтесь</a>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
