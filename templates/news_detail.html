@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <!-- Кнопка назад -->
+            <a href="{{ url_for('news') }}" class="btn btn-outline-secondary mb-4">
+                <i class="bi bi-arrow-left me-2"></i>Назад к новостям
+            </a>
+
+            <!-- Заголовок -->
+            <h1 class="fw-bold text-primary mb-3">{{ news.title }}</h1>
+            
+            <!-- Дата -->
+            <div class="d-flex align-items-center text-muted mb-4">
+                <i class="bi bi-calendar me-2"></i>
+                <span>{{ news.created_at.strftime('%d %B %Y') }}</span>
+            </div>
+
+            <!-- Изображение -->
+            {% if news.image_url %}
+            <div class="mb-4">
+                <img src="{{ news.image_url }}" alt="{{ news.title }}" class="img-fluid rounded shadow-sm">
+            </div>
+            {% endif %}
+
+            <!-- Текст новости -->
+            <div class="news-content" style="font-size: 1.1rem; line-height: 1.7; color: #333;">
+                {{ news.content|replace('\n', '<br>')|safe }}
+            </div>
+
+            <!-- Разделитель -->
+            <hr class="my-5">
+
+            <!-- Кнопка назад внизу -->
+            <div class="text-center">
+                <a href="{{ url_for('news') }}" class="btn btn-primary">
+                    <i class="bi bi-arrow-left me-2"></i>Вернуться к списку новостей
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
